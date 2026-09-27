@@ -333,7 +333,41 @@
             display: flex;
             justify-content: space-between;
         }
+        .process {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
 
+        .process-card {
+            padding: 30px;
+            border: 1px solid var(--border);
+            border-radius: 22px;
+            background: rgba(255,255,255,.025);
+            transition: .3s ease;
+        }
+
+        .process-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(92,225,230,.35);
+        }
+
+        .process-number {
+            color: var(--accent2);
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 35px;
+        }
+
+        .process-card h3 {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .process-card p {
+            color: var(--muted);
+            line-height: 1.7;
+        }
         @media (max-width: 800px) {
 
             nav {
@@ -487,7 +521,60 @@ I help you get things done faster.
 
         </section>
 
+        <section id="process">
 
+            <div class="section-label">How it works</div>
+
+            <h2 class="section-title">
+                Simple from start to finish.
+            </h2>
+
+            <div class="process">
+
+                <div class="process-card">
+
+                    <div class="process-number">01 / TELL ME</div>
+
+                    <h3>Tell me what you need.</h3>
+
+                    <p>
+                        Send me the details of your task,
+                        project or problem.
+                    </p>
+
+                </div>
+
+
+                <div class="process-card">
+
+                    <div class="process-number">02 / I WORK</div>
+
+                    <h3>I handle the work.</h3>
+
+                    <p>
+                        I complete the task carefully and
+                        keep communication simple.
+                    </p>
+
+                </div>
+
+
+                <div class="process-card">
+
+                    <div class="process-number">03 / DELIVERY</div>
+
+                    <h3>You get the result.</h3>
+
+                    <p>
+                        You receive the finished work
+                        ready to use.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
         <section id="about">
 
             <div class="section-label">About</div>
