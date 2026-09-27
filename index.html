@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gustas Services</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        nav {
+            width: 100%;
+            padding: 25px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+            background: rgba(10, 10, 10, 0.75);
+            backdrop-filter: blur(15px);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: -1px;
+        }
+
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            margin-left: 30px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 120px 7% 80px;
+            background:
+                radial-gradient(circle at 80% 20%, #273c75 0%, transparent 30%),
+                radial-gradient(circle at 20% 80%, #192a56 0%, transparent 25%),
+                #0a0a0a;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 8px 15px;
+            border: 1px solid #333;
+            border-radius: 50px;
+            color: #aaa;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: clamp(50px, 8vw, 100px);
+            line-height: 0.95;
+            letter-spacing: -5px;
+            margin-bottom: 30px;
+        }
+
+        .gradient {
+            background: linear-gradient(90deg, #ffffff, #647cff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            max-width: 600px;
+            color: #aaa;
+            font-size: 20px;
+            margin-bottom: 35px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            background: white;
+            color: black;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255,255,255,0.15);
+        }
+
+        section {
+            padding: 120px 7%;
+        }
+
+        .section-title {
+            font-size: 50px;
+            letter-spacing: -2px;
+            margin-bottom: 50px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            padding: 35px;
+            border: 1px solid #222;
+            border-radius: 20px;
+            background: #101010;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #444;
+        }
+
+        .number {
+            color: #647cff;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .card h3 {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #888;
+        }
+
+        .about {
+            max-width: 800px;
+        }
+
+        .about p {
+            color: #aaa;
+            font-size: 20px;
+        }
+
+        .contact {
+            text-align: center;
+            background: #101010;
+        }
+
+        .contact h2 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            color: #888;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            padding: 30px 7%;
+            color: #555;
+            text-align: center;
+            background: #0a0a0a;
+        }
+
+        @media (max-width: 800px) {
+            nav {
+                padding: 20px 5%;
+            }
+
+            nav a {
+                margin-left: 10px;
+                font-size: 14px;
+            }
+
+            .hero {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            section {
+                padding: 80px 5%;
+            }
+
+            .services {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                letter-spacing: -3px;
+            }
+
+            .contact h2 {
+                font-size: 42px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">GUSTAS.</div>
+
+        <div>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="tag">AVAILABLE FOR WORK</div>
+
+            <h1>
+                Simple services.<br>
+                <span class="gradient">Better results.</span>
+            </h1>
+
+            <p>
+                Professional digital and administrative services
+                designed to make your work easier, faster and more efficient.
+            </p>
+
+            <a href="#contact" class="button">
+                Get in touch →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section id="services">
+
+        <h2 class="section-title">
+            What I do.
+        </h2>
+
+        <div class="services">
+
+            <div class="card">
+                <div class="number">01</div>
+                <h3>Data & Research</h3>
+                <p>
+                    Data entry, web research, information gathering
+                    and spreadsheet organization.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="number">02</div>
+                <h3>Digital Support</h3>
+                <p>
+                    Administrative tasks, document formatting,
+                    copywriting and online assistance.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="number">03</div>
+                <h3>Translation</h3>
+                <p>
+                    Lithuanian and English translation for
+                    everyday business and digital content.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="about">
+
+        <div class="about">
+
+            <h2 class="section-title">
+                Why work with me?
+            </h2>
+
+            <p>
+                I focus on simple communication, fast delivery
+                and reliable results. Whether you need a small
+                task completed or ongoing support, I'm ready to help.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section id="contact" class="contact">
+
+        <h2>Let's work together.</h2>
+
+        <p>
+            Have a project or task in mind?
+        </p>
+
+        <a href="mailto:your@email.com" class="button">
+            Contact me →
+        </a>
+
+    </section>
+
+
+    <footer>
+        © 2026 Gustas. All rights reserved.
+    </footer>
+
+</body>
+</html>
